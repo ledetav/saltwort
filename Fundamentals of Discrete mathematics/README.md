@@ -9,3 +9,8 @@
 - The input to the set is completed when the user press Enter;
 - The set can consist only of integers, otherwise an error message is displayed and the user is prompted to enter another data set;
 - At the end, the program outputs the answer in the form of a transformed set. 
+
+## Task 2
+
+> How many integers are there between 0 and 999 containing exactly one digit 7?
+
