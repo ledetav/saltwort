@@ -1,49 +1,47 @@
 #include <iostream>
+#include <set>
 #include <string>
 #include <sstream>
-#include <set>
+#include <algorithm>
 
 using namespace std;
 
-set<int> input_set() {
-    while (true) {
-        string input;
-        getline(cin, input);
-        stringstream ss(input);
-        set<int> s;
-        int x;
-        while (ss >> x) {
-            s.insert(x);
-        }
-        if (ss.eof() && !ss.fail()) {
-            return s;
-        } else {
-            cout << "Error: set can only consist of integers" << endl;
-        }
+set<int> getSetFromInput(string setName) {
+    set<int> s;
+    string input;
+    cout << "Enter set " << setName << ": ";
+    getline(cin, input);
+    stringstream ss(input);
+    int num;
+    while (ss >> num) {
+        s.insert(num);
     }
+    if (!ss.eof()) {
+        cout << "Error: set " << setName << " contains non-integer values" << endl;
+        s.clear();
+    }
+    return s;
 }
 
 int main() {
-    cout << "Enter set A:" << endl;
-    set<int> set_a = input_set();
+    set<int> A = getSetFromInput("A");
+    set<int> B = getSetFromInput("B");
+    set<int> U = getSetFromInput("U");
+    set<int> C = getSetFromInput("C");
 
-    cout << "Enter set B:" << endl;
-    set<int> set_b = input_set();
-
-    cout << "Enter set U:" << endl;
-    set<int> set_u = input_set();
-
-    cout << "Enter set C:" << endl;
-    set<int> set_c = input_set();
+    set<int> temp1;
+    set_union(A.begin(), A.end(), B.begin(), B.end(), inserter(temp1, temp1.end()));
+    set<int> temp2;
+    set_difference(U.begin(), U.end(), C.begin(), C.end(), inserter(temp2, temp2.end()));
 
     set<int> result;
-    set_intersection(set_a.begin(), set_a.end(), set_b.begin(), set_b.end(), inserter(result, result.begin()));
-    set_difference(set_u.begin(), set_u.end(), set_c.begin(), set_c.end(), inserter(result, result.begin()));
-    cout << "Transformed set: ";
+    set_intersection(temp1.begin(), temp1.end(), temp2.begin(), temp2.end(), inserter(result, result.end()));
+
+    cout << "Result: { ";
     for (int x : result) {
         cout << x << " ";
     }
-    cout << endl;
+    cout << "}" << endl;
 
     return 0;
 }
