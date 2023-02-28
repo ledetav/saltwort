@@ -1,7 +1,7 @@
 # TASKS
 ## Task 1
 
-> Four sets are fed to the input of the program, which are converted according to the following formula: (A&B)||(U\C).
+> Four sets are fed to the input of the program, which are converted according to the following formula: **(A&B)||(U\C)**.
 
 **Requirements:**
 - The composition of each set is entered by the keyboard user;
@@ -12,5 +12,12 @@
 
 ## Task 2
 
-> How many integers are there between 0 and 999 containing exactly one digit 7?
+> How many integers are there between 0 and 999 containing exactly **one** digit 7?
 
+## Task 3
+
+> How many numbers in the range from 0 to 999,999 do **not contain** two adjacent identical digits?
+
+## Task 4
+
+> How many integers from 1 to 100 are **not divisible** by two, three, or five?
