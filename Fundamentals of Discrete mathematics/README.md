@@ -21,3 +21,29 @@
 ## Task 4
 
 > How many integers from 1 to 100 are **not divisible** by two, three, or five?
+
+## Task 5
+
+> It is required to generate all possible k-combinations of n elements.
+
+**Input data format:**
+- Two numbers k and n separated by a space. The condition is guaranteed to be fulfilled for them: **0≤k≤n**.
+
+**Output data format:**
+- The required number of rows, each of which contains k numbers from the range from 0 to n-1 inclusive, separated by a space.
+
+**Sample Input 1:**
+```2 3```
+
+**Sample Output 1:**
+```
+0 1
+0 2
+1 2
+```
+
+**Sample Input 2:**
+```1 1```
+
+**Sample Output 2:**
+```0```
