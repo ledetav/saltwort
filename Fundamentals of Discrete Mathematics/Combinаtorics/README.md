@@ -50,3 +50,10 @@
 
 ## Task 6
 > How many six-digit numbers are there whose sum of digits does not exceed 47?
+
+## Task 7
+> How many binary (i.e. consisting of digits 0 and 1) strings of length n containing k units in which no two units stand side by side?
+- Solve the task in the general case, and as an answer enter the number of such strings for **n = 42** and **k = 7**.
+
+## Task 8
+> How many numbers less than a million can be written using the digits 8 and/or 9?
