@@ -24,7 +24,7 @@
 
 ## Task 5
 
-> It is required to generate all possible k-combinations of n elements.
+> Generate all possible k-combinations of n elements.
 
 **Input data format:**
 - Two numbers k and n separated by a space. The condition is guaranteed to be fulfilled for them: **0≤k≤n**.
@@ -57,3 +57,42 @@
 
 ## Task 8
 > How many numbers less than a million can be written using the digits 8 and/or 9?
+
+## Task 9
+
+> How many six-digit numbers are there, all digits of which have the same parity? For example, in the number 222222, all digits are even.
+
+## Task 10
+
+> Generate all possible k-permutations of n-elements without repetitions.
+
+**Format input data:**
+Two numbers n and k separated by a space. The condition is guaranteed to be fulfilled for them: **0 < k ≤ n**.
+
+**Output data format:**
+The required number of lexicographically ordered strings, each of which contains k numbers from **0 to n-1**, separated by a space.
+
+**Sample Input:**
+```
+4 2
+```
+
+**Sample Output:**
+```
+0 1
+0 2
+0 3
+1 0
+1 2
+1 3
+2 0
+2 1
+2 3
+3 0
+3 1
+3 2
+```
+
+## Task 11
+
+> From a group consisting of 7 men and 4 women, it is necessary to choose 6 people so that there are at least 2 women among them. How many ways can this be done?
