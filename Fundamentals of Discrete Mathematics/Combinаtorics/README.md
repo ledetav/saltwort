@@ -47,3 +47,6 @@
 
 **Sample Output 2:**
 ```0```
+
+## Task 6
+> How many six-digit numbers are there whose sum of digits does not exceed 47?
